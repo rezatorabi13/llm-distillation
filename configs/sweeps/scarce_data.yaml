@@ -1,0 +1,6 @@
+# How much does the teacher help when training text is scarce?
+# The 30k-story runs are shared with sweeps/main.yaml and are skipped if already present.
+configs: [configs/baseline.yaml, configs/distill.yaml]
+seeds: [0, 1, 2]
+grid:
+  data.num_train_stories: [300, 3000, 30000]

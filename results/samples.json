@@ -1,0 +1,32 @@
+[
+  {
+    "prompt": "Once upon a time, there was a little dog named",
+    "model": "teacher",
+    "text": "Once upon a time, there was a little dog named Spot. Spot was a very obedient dog, always listening to his owner. One day, Spot's owner said, \"Spot, I need you to be a good boy and remind me to take a test.\" Spot wagged"
+  },
+  {
+    "prompt": "Once upon a time, there was a little dog named",
+    "model": "checkpoints/distill_n30000_T1_a1_s0",
+    "text": "Once upon a time, there was a little dog named Spot. Max loved to play in the house with his friends.\n\nMax was very happy and loved to play with his toys. One day, Max saw a boy playing with the ball. He wanted to play with it"
+  },
+  {
+    "prompt": "Once upon a time, there was a little dog named",
+    "model": "checkpoints/baseline_n30000_s0",
+    "text": "Once upon a time, there was a little dog named Timmy. Timmy loved to play in the park with his mommy. One day, Timmy's mommy found a big box on the table. Timmy was so happy.\n\nTimmy thought for that"
+  },
+  {
+    "prompt": "Lily was sad because her toy",
+    "model": "teacher",
+    "text": "Lily was sad because her toy was broken. She went to her mommy and said, \"Mommy, my toy is ugly. Can you fix it?\"\n\nMommy said, \"I'm sorry, Lily. We will try to fix it"
+  },
+  {
+    "prompt": "Lily was sad because her toy",
+    "model": "checkpoints/distill_n30000_T1_a1_s0",
+    "text": "Lily was sad because her toy was not a lot. She wished she would always play with her mom.\n\nLater that day, Lily's mom made a big mess. She took her to her for a walk. She gave her the doll back to"
+  },
+  {
+    "prompt": "Lily was sad because her toy",
+    "model": "checkpoints/baseline_n30000_s0",
+    "text": "Lily was sad because her toy. She said it was nice.\n\n\"Lily, mom. You have to be careful and be mean to go to the store. Next time, Mom's mom. We can have a new friend. We will"
+  }
+]

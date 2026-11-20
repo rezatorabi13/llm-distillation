@@ -1,0 +1,4 @@
+# Headline comparison: baseline vs distilled student on 30k stories, 3 seeds each.
+configs: [configs/baseline.yaml, configs/distill.yaml]
+seeds: [0, 1, 2]
+grid: {}

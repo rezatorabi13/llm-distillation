@@ -1,0 +1,28 @@
+# Distilled student: trained only on the teacher's per-token next-token distributions.
+# Every field not listed here takes its default from src/lm_distill/config.py.
+
+teacher:
+  name: roneneldan/TinyStories-33M     # GPT-Neo, 68.5M params, frozen
+
+student:
+  n_layer: 2
+  n_embd: 128
+  n_head: 4                            # 6.84M params, 10x smaller than the teacher
+
+data:
+  num_train_stories: 30000
+  chunk_len: 64
+  num_val_chunks: 1000
+
+train:
+  method: distill
+  temperature: 1.0
+  alpha: 1.0                           # pure distillation: the ground-truth next token is never used
+  steps: 2000
+  batch_size: 32
+  lr: 2.0e-3
+  weight_decay: 0.01
+  grad_clip: 1.0
+  eval_every: 500
+  amp: true
+  seed: 0

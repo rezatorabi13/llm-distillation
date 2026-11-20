@@ -1,0 +1,46 @@
+{
+  "prompt": "Once upon a time, there was a little",
+  "entropy_bits": 2.035499334335327,
+  "top": [
+    {
+      "token": " girl",
+      "prob": 0.648557722568512
+    },
+    {
+      "token": " boy",
+      "prob": 0.21160222589969635
+    },
+    {
+      "token": " bird",
+      "prob": 0.027528800070285797
+    },
+    {
+      "token": " bunny",
+      "prob": 0.015486206859350204
+    },
+    {
+      "token": " bear",
+      "prob": 0.009407040663063526
+    },
+    {
+      "token": " dog",
+      "prob": 0.008268837817013264
+    },
+    {
+      "token": " mouse",
+      "prob": 0.006399944890290499
+    },
+    {
+      "token": " rabbit",
+      "prob": 0.005791553296148777
+    },
+    {
+      "token": " duck",
+      "prob": 0.00543322553858161
+    },
+    {
+      "token": " fish",
+      "prob": 0.004019768908619881
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "run_name": "baseline_n30000_s2",
+  "config": {
+    "teacher": {
+      "name": "roneneldan/TinyStories-33M"
+    },
+    "student": {
+      "n_layer": 2,
+      "n_embd": 128,
+      "n_head": 4
+    },
+    "data": {
+      "dataset": "roneneldan/TinyStories",
+      "num_train_stories": 30000,
+      "download_train_stories": 30000,
+      "download_val_stories": 2000,
+      "num_val_chunks": 1000,
+      "chunk_len": 64,
+      "cache_dir": "~/.cache/lm-distill"
+    },
+    "train": {
+      "method": "baseline",
+      "temperature": 1.0,
+      "alpha": 1.0,
+      "steps": 2000,
+      "batch_size": 32,
+      "lr": 0.002,
+      "weight_decay": 0.01,
+      "grad_clip": 1.0,
+      "eval_every": 500,
+      "eval_batch_size": 32,
+      "amp": true,
+      "seed": 2
+    }
+  },
+  "num_train_chunks": 103752,
+  "student_params": 6837888,
+  "train_seconds": 66.7,
+  "final": {
+    "step": 2000,
+    "train_loss": 3.0679450035095215,
+    "perplexity": 15.64028188937468,
+    "kl": 1.513034642779638,
+    "agreement": 0.513984126984127
+  },
+  "history": [
+    {
+      "step": 500,
+      "train_loss": 3.532952070236206,
+      "perplexity": 27.059425204938208,
+      "kl": 2.0316673942444816,
+      "agreement": 0.4254126984126984
+    },
+    {
+      "step": 1000,
+      "train_loss": 3.1512460708618164,
+      "perplexity": 18.984734693033406,
+      "kl": 1.694977270701575,
+      "agreement": 0.4825238095238095
+    },
+    {
+      "step": 1500,
+      "train_loss": 3.0215933322906494,
+      "perplexity": 16.181378084670534,
+      "kl": 1.5500369001116072,
+      "agreement": 0.5041111111111111
+    },
+    {
+      "step": 2000,
+      "train_loss": 3.0679450035095215,
+      "perplexity": 15.64028188937468,
+      "kl": 1.513034642779638,
+      "agreement": 0.513984126984127
+    }
+  ]
+}

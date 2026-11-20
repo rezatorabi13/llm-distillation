@@ -1,0 +1,20 @@
+{
+  "batch": "8 x 64 tokens",
+  "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "torch_threads": 24,
+  "teacher": {
+    "params": 68514048,
+    "size_mb": 274.1,
+    "cpu_latency_ms": 114.5
+  },
+  "student": {
+    "params": 6837888,
+    "size_mb": 27.4,
+    "cpu_latency_ms": 11.8
+  },
+  "ratios": {
+    "params": 10.0,
+    "size_mb": 10.0,
+    "cpu_latency_ms": 9.7
+  }
+}
